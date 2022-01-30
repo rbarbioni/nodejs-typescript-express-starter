@@ -25,7 +25,7 @@ NodeJs, TypeScript, Express and Sentry Starter Project
 #### Create .env file
 Copy and Paste .env-template to .env and edit the configurations
 ```
-NODE_ENV=local
+NODE_ENV=local | development | production
 SENTRY_DSN=
 ```
 
