@@ -72,7 +72,7 @@ make test
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "ts-node - Launch & debug",
+      "name": "APP",
       "type": "node",
       "request": "launch",
       "runtimeArgs": ["-r", "ts-node/register"],
