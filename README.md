@@ -64,6 +64,28 @@ Just run the command
 make test
 ```
 
+#### Run de project inside VSCode
+- 1: create .vscode folder in root project
+- 2: add the file launch.json in the folder
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ts-node - Launch & debug",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "runtimeExecutable": "node",
+      "args": ["--inspect", "${workspaceFolder}/src/index.ts"],
+      "cwd": "${workspaceRoot}",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"],
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
+```
+
 ## Endpoints
 - GET http://localhost:3000/sucess
 Returns 200
