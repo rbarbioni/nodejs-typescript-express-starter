@@ -1,9 +1,9 @@
 import AppError from "../errors";
 
-export async function fooSuccess() {
+export function fooSuccess() {
   return true;
 }
 
-export async function fooError(body: any) {
+export function fooError(body: any) {
   throw new AppError("FooError", body);
 }
