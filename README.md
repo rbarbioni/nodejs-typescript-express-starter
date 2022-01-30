@@ -64,6 +64,13 @@ Just run the command
 make test
 ```
 
+## Endpoints
+- http://localhost:3000/sucess
+Returns 200
+
+- http://localhost:3000/error
+Returns 500 and if Sentry is active, sends errors to Sentry Console.
+
 ## Sentry
 To learn more about Sentry, visit https://sentry.io
 Create a free Sentry account and project
